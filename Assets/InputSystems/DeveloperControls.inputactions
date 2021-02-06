@@ -1,0 +1,93 @@
+{
+    "name": "TestingControls",
+    "maps": [
+        {
+            "name": "Timescale",
+            "id": "785de833-20a2-4382-bbe9-f5baa7c51485",
+            "actions": [
+                {
+                    "name": "NormalSpeed",
+                    "type": "Button",
+                    "id": "0fb666d3-8b55-4bc0-aefa-72c0b04015d8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "SpeedChange",
+                    "type": "Button",
+                    "id": "3d90f6e2-1d75-4398-9287-fb63e9c100ea",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Stop",
+                    "type": "Button",
+                    "id": "025d6bdd-c6c5-4a89-af8f-0b85dc1b4c16",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b6d3bf9b-45cd-477d-af21-3d5424418f25",
+                    "path": "<Keyboard>/0",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "NormalSpeed",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "01258f8d-cd20-4914-8e52-81534e4ed0a8",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SpeedChange",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "37bc45f6-4ef4-450c-b6c5-97ef8b35c118",
+                    "path": "<Keyboard>/minus",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SpeedChange",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "4a9b342b-bb5d-4198-a905-6e37c481664d",
+                    "path": "<Keyboard>/equals",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SpeedChange",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "bb866cdf-2ceb-4fcd-9a69-72a4c9d03d8d",
+                    "path": "<Keyboard>/backspace",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Stop",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
