@@ -1,7 +1,7 @@
 # Unity
 Template for Unity projects
 
-Uses Unity 2020.1.6f1
+Uses Unity 2021.1.7f1
 
 ## Contents
 - .gitignore for Unity, Mac, VSCode & FMOD
