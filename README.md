@@ -4,7 +4,7 @@ Template for Unity projects
 Uses Unity 2020.1.6f1
 
 ## Contents
-- .gitignore for Unity & Mac
+- .gitignore for Unity, Mac, VSCode & FMOD
 - Cinemachine
 - Unity InputSystem (replaces legacy Input)
 - [2d-extras](https://github.com/Unity-Technologies/2d-extras)
