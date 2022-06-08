@@ -1,39 +1,16 @@
-﻿// ----------------------------------------------------------------------------
-// Based on...
-// Unite 2017 - Game Architecture with Scriptable Objects
-// 
-// Author: Ryan Hipple
-// Date:   10/04/17
-// ----------------------------------------------------------------------------
-
-using UnityEngine;
+﻿using UnityEngine;
 
 [CreateAssetMenu]
 public class FloatVariable : ScriptableObject
 {
 #if UNITY_EDITOR
-    [Multiline]
-    public string DeveloperDescription = "";
+	[TextArea(3,10)]
+	public string DeveloperDescription = "";
 #endif
-    public float Value;
 
-    public void SetValue(float value)
-    {
-        Value = value;
-    }
+	[SerializeField]
+	private float _value;
+	public float Value { get => _value; set => _value = value; }
 
-    public void SetValue(FloatVariable value)
-    {
-        Value = value.Value;
-    }
-
-    public void ApplyChange(float amount)
-    {
-        Value += amount;
-    }
-
-    public void ApplyChange(FloatVariable amount)
-    {
-        Value += amount.Value;
-    }
+	public static implicit operator float(FloatVariable variable) => variable.Value;
 }

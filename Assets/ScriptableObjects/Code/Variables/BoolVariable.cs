@@ -1,29 +1,16 @@
-// ----------------------------------------------------------------------------
-// Based on...
-// Unite 2017 - Game Architecture with Scriptable Objects
-// 
-// Author: Ryan Hipple
-// Date:   10/04/17
-// ----------------------------------------------------------------------------
-
 using UnityEngine;
 
 [CreateAssetMenu]
 public class BoolVariable : ScriptableObject
 {
 #if UNITY_EDITOR
-    [Multiline]
-    public string DeveloperDescription = "";
+	[TextArea(3,10)]
+	public string DeveloperDescription = "";
 #endif
-    public bool Value;
 
-    public void SetValue(bool value)
-    {
-        Value = value;
-    }
+	[SerializeField]
+	private bool _value;
+	public bool Value { get => _value; set => _value = value; }
 
-    public void SetValue(BoolVariable value)
-    {
-        Value = value.Value;
-    }
+	public static implicit operator bool(BoolVariable variable) => variable.Value;
 }
