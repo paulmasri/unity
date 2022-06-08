@@ -16,20 +16,12 @@ namespace PaulMasriStone.Generic
         public T _prefab;
 
         [Tooltip("Size of this object pool")]
-        public IntReference _size;
-        private int Size
-        {
-            get => _size.Value;
-            set => _size.SetValue(value);
-        }
+        public IntVariable _size;
+        private int Size { get => _size; set => _size.Value = value; }
 
         [Tooltip("Whether the object pool size can grow or not. If it grows it will permanently change the value of Size.")]
-        public BoolReference _canGrow;
-        private bool CanGrow
-        {
-            get => _canGrow.Value;
-            set => _canGrow.SetValue(value);
-        }
+        public BoolVariable _canGrow;
+        private bool CanGrow { get => _canGrow; set => _canGrow.Value = value; }
 
         // The list of free and used objects for tracking.
         private List<T> _freeList;
