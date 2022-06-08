@@ -11,10 +11,6 @@
 namespace lisandroct.EventSystem.Events {
     
     
-    [UnityEditor.CustomEditor(typeof(Vector4Event))]
-    public class Vector4Inspector : lisandroct.EventSystem.EventInspector<UnityEngine.Vector4, Vector4Test> {
-    }
-    
-    public class Vector4Test : lisandroct.EventSystem.TestObject<UnityEngine.Vector4> {
+    public class BoolTest : lisandroct.EventSystem.TestObject<bool> {
     }
 }

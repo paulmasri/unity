@@ -12,9 +12,9 @@
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "com.lisandroct.core": "0.0.2"
+        "com.lisandroct.core": "0.1.1"
       },
-      "hash": "ca5bf823a20c5956881bdf44a7ae2dc3e770c2bf"
+      "hash": "201a183c8a3fd25a23db169cfe6f0160cf721bfe"
     },
     "com.unity.2d.animation": {
       "version": "8.0.2",

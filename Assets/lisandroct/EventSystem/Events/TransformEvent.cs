@@ -11,6 +11,7 @@
 namespace lisandroct.EventSystem.Events {
     
     
-    public class Vector4Listener : lisandroct.EventSystem.Listener<UnityEngine.Vector4> {
+    [UnityEngine.CreateAssetMenuAttribute(fileName="OnTransformEvent", menuName="Events/Transform Event")]
+    public class TransformEvent : lisandroct.EventSystem.GameEvent<UnityEngine.Transform> {
     }
 }

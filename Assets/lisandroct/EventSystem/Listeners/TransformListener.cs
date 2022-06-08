@@ -11,7 +11,6 @@
 namespace lisandroct.EventSystem.Events {
     
     
-    [UnityEngine.CreateAssetMenuAttribute(fileName="OnVector3Event", menuName="Events/Vector3 Event")]
-    public class Vector3Event : lisandroct.EventSystem.Event<UnityEngine.Vector3> {
+    public class TransformListener : lisandroct.EventSystem.Listener<UnityEngine.Transform> {
     }
 }

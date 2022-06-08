@@ -11,7 +11,7 @@
 namespace lisandroct.EventSystem.Events {
     
     
-    [UnityEngine.CreateAssetMenuAttribute(fileName="OnFloatEvent", menuName="Events/Float Event")]
-    public class FloatEvent : lisandroct.EventSystem.Event<float> {
+    [UnityEditor.CustomEditor(typeof(TransformEvent))]
+    public class TransformInspector : lisandroct.EventSystem.EventInspector<UnityEngine.Transform, TransformTest> {
     }
 }

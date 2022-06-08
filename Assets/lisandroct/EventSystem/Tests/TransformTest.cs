@@ -11,6 +11,6 @@
 namespace lisandroct.EventSystem.Events {
     
     
-    public class ColorListener : lisandroct.EventSystem.Listener<UnityEngine.Color> {
+    public class TransformTest : lisandroct.EventSystem.TestObject<UnityEngine.Transform> {
     }
 }
